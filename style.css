@@ -1,0 +1,160 @@
+:root {
+    --grey: #746d6d;
+    --background: #eee;
+    --post-background: #fff;  
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: var(--background);
+    padding: 20px
+}
+
+main {
+    margin: auto;
+
+    width: min(700px);
+    height: 80%;
+    
+    border: 1px solid #ddd;
+    border-radius: 10px;
+
+    background: var(--post-background);
+    
+}
+
+.material-icons{
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+}
+
+
+/* Header =================================================================*/
+.header{
+    
+    padding: 0.8rem;
+    
+    display: flex;
+    align-items: center;
+    
+}
+
+.header .material-icons{
+    font-size: 2rem;
+    margin-right: 0.8rem
+}
+
+.user {
+    font-weight: bold;
+    padding-right: 0.8rem;
+}
+
+/* Image =================================================================*/
+.post{
+    width: 100%;
+}
+
+.interactiveIcons {
+    display: flex;
+}
+
+
+.material-icons.like {
+    padding-left: 1rem;
+    padding-right: 0.8rem;
+}
+
+.material-icons.chat {
+    padding-right: 0.8rem;
+}
+
+.material-icons.search {
+    padding-right: 0.8rem;
+    flex: 1;
+}
+
+.material-icons.bookmark {
+    padding-right: 1rem;
+}
+
+
+/* Comments =================================================================*/
+.interactiveComments {
+    padding-left: 1rem;
+}
+
+.amountLikes p {
+    color: var(--grey);
+}
+.postDescription {
+    display: flex;
+    margin: 0.3rem 0 ;
+}
+
+.amountComments {
+    color: var(--grey);
+    margin-bottom: 0.3rem;
+}
+
+.comments {
+    display: flex;
+    align-items: center;
+}
+.comment {
+    flex: 1;
+
+}
+.material-icons.littleLike {
+    font-size: 1.2rem;
+    padding-right: 2rem;
+}
+
+.timePost {
+    color: var(--grey);
+    margin: 0.3rem 0; 
+}
+
+/*Form =================================================================*/
+form {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+
+form input {
+    border: none;
+    flex: 1;
+    padding-left: 0.5rem;
+}
+
+form button {
+    border: none;
+}
+
+
+/*Responsive =================================================================*/
+@media (max-width: 600px) {
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    main{
+        width: 100%;
+        border-radius: 0;
+    }
+}
